@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import json
 import requests
 
@@ -65,14 +65,14 @@ to = input("To: ")
 m = input("Message: ")
 response = requests.post(
   'https://api.46elks.com/a1/sms',
-  auth = ("API_USERNAME", "API_PASSWORD"),  # change API_USERNAME and API_PASSWORD to your own api username and pssword
+  auth = ("API_USERNAME", "API_PASSWORD"),
   data = {
     'from': f,
     'to': to,
     'message': m
   }
 )
-response.text = x
+x = response.text
 y = json.loads(x)
 for i in y:
         if i == "status":
