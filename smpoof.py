@@ -12,7 +12,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    
+
 
 print("USE THIS TOOL AT YOUR OWN RISK. I AM NOT LIABLE FOR ANY WRONG DOING REGUARDING THE USE OF THIS TOOL")
 wellcometext = """
@@ -25,8 +25,6 @@ _____/\\\\\\\\\\\____/\\\\____________/\\\\__/\\\\\\\\\\\\\_________/\\\\\______
       __/\\\______\//\\\__\/\\\_____________\/\\\_\/\\\______________\///\\\__/\\\_____\///\\\__/\\\____\/\\\_____________  
        _\///\\\\\\\\\\\/___\/\\\_____________\/\\\_\/\\\________________\///\\\\\/________\///\\\\\/_____\/\\\_____________ 
         ___\///////////_____\///______________\///__\///___________________\/////____________\/////_______\///______________
-
-
                     ___________
                    /.---------.\`-._
                   //          ||    `-._                BY McShoothy
@@ -65,7 +63,7 @@ to = input("To: ")
 m = input("Message: ")
 response = requests.post(
   'https://api.46elks.com/a1/sms',
-  auth = ("API_USERNAME", "API_PASSWORD"),
+  auth = ("API_USERNAME", "API_PASSWORD"), 
   data = {
     'from': f,
     'to': to,
